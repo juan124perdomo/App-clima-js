@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(135deg, #6100c8, #2575fc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Contenedor del buscador */
+.containerBuscador{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin: 30px auto ;
+    background-color: rgba(230, 230, 230, 0.493);
+    gap: 10px;
+    color: white;
+}
+
+.inputCiudad{
+    width: 250px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+.inputCiudad::placeholder{
+    text-align: center;
+}
+
+.btnBuscar{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6100c8;
+    color: white;
+    cursor: pointer;
+}
+
+
+.containerClima{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin: 50px auto ;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+}
+.cargando{
+    color: #6100c8;
+    font-weight: bold;
+}
+
+.pais,.descripcion , .temperatura, .latlon{
+    font-size: 18px;
+    color: #333;
+    align-self: flex-start;
+}
